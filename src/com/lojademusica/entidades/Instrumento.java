@@ -21,4 +21,3 @@ public class Instrumento extends Produto {
         System.out.printf("Instrumento: %s - Marca: %s - Tipo: %s\n", getNome(), getMarca(), getTipo());
     }
 }
-    
