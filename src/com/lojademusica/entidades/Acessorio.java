@@ -12,3 +12,4 @@ public String getMaterial() {
     public void exibirDetalhes() {
         System.out.printf("Acessório: %s - Material: %s\n", getNome(), getMaterial());
     }
+}
