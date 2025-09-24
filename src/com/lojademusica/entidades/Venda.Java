@@ -1,4 +1,5 @@
 package com.lojademusica.entidades;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,6 +14,7 @@ public class Venda {
         this.id = id;
         this.data = data;
         this.itens = new ArrayList<>();
+        this.valorTotal = 0.0;
     }
 
     public void adicionarProduto(Produto p, int qtd) {
@@ -20,19 +22,20 @@ public class Venda {
         itens.add(item);
         calcularTotal();
     }
+
     public double calcularTotal() {
         valorTotal = 0;
-        for (ItemVenda Item : itens) {
-            valorTptal += Item.getSubtotal();
+        for (ItemVenda item : itens) {
+            valorTotal += item.calcularSubtotal();
         }
+        return valorTotal;
     }
+
     public double getValorTotal() {
         return valorTotal;
     }
-    public void exibirItens() {
-        for (ItemVenda item : itens){
-            item.getProduto().exibirDetalhes();
-            System.ou.println("Quantidade: " + item.getQuantidade() + "| Subtotal: R$ " + item.getSubtotal());
-        }    }
 
+    public int getId() {
+    return id;
+}
 }
