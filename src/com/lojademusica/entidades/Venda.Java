@@ -3,6 +3,11 @@ package com.lojademusica.entidades;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import com.lojademusica.entidades.ItemVenda;
+
+
+
+
 
 public class Venda {
     private int id;
@@ -14,7 +19,7 @@ public class Venda {
         this.id = id;
         this.data = data;
         this.itens = new ArrayList<>();
-        this.valorTotal = 0.0;
+        
     }
 
     public void adicionarProduto(Produto p, int qtd) {
