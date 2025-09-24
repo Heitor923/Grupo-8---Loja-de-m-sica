@@ -1,3 +1,5 @@
+package com.lojademusica.entidades; 
+
 public class Acessorio extends Produto {
     private String material;
 

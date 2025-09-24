@@ -1,3 +1,4 @@
+package com.lojademusica.entidades;
 public class ItemVenda {
     private Produto produto;
     private int quantidade;

@@ -1,3 +1,4 @@
+package com.lojademusica.entidades;
 public class Instrumento extends Produto {
     private String tipo;
     private String marca;
