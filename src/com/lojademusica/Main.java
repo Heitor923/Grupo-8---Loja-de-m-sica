@@ -1,7 +1,6 @@
 package com.lojademusica;
 
 import com.lojademusica.entidades.*;
-import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,10 +30,9 @@ public class Main {
 
         System.out.println("\nVendas Realizadas");
         Venda v1 = f.consultarVenda(venda1.getId());
-        System.out.println("Venda ID: " + v1.getId() + ", Valor Total: R$ " + v1.getValorTotal());
-
+        System.out.printf("%n ID Venda: %d, Valor Total: R$ %.2f %n ", v1.getId(), v1.getValorTotal() );
         Venda v2 = f.consultarVenda(venda2.getId());
-        System.out.println("Venda ID: " + v2.getId() + ", Valor Total: R$ " + v2.getValorTotal());
+        System.out.printf("ID Venda: %d, Valor Total: R$ %.2f %n ", v2.getId(), v2.getValorTotal() );
 
 
     }
